@@ -13,7 +13,6 @@ app.get('/', (req, res) => {
         })
         .then((con) => {
             //console.log(con.connections);
-            alert('Connected to database!!!');
             res.sendFile('index.html', { root: path.join(__dirname, 'public') });
         });
 });
