@@ -24,13 +24,13 @@ app.get('/test', (req, res) => {
         })
         .then((con) => {
             console.log('Conectado a la DB');
-            res.render('head');
+            res.render('user');
         });
 });
 
 app.get('/', (req, res) => {
     console.log('Dominio principal');
-    res.render('head');
+    res.render('user');
 });
 
 module.exports = app;
