@@ -8,7 +8,7 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     //Conexión al cloud de Mongodb Atlas ...
     mongoose
-        .connect(DB, {
+        .connect('mongodb+srv://hrgarcia:EaFhXeNfxbG277Zz@cluster0.fs8tm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
             useNewUrlParser: true,
         })
         .then((con) => {
